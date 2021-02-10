@@ -1,0 +1,54 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+.container {
+  max-width: 500px;
+  width:100%;
+  margin: 0 auto;
+}
+.accordion {
+  padding-top: 25%;
+}
+i.fa.fa-angle-down {
+  float: right;
+}
+.rotate {
+  transform: rotateX(180deg);
+}
+/* button.panel:active i.fa.fa-angle-down {
+  transform: rotate(180deg);
+} */
+.panel {
+  background-color: #7B68EE;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 0.5px solid black;
+  outline: none;
+}
+.active,
+.panel:hover {
+  background-color: #ccc;
+}
+.accordion .content {
+  display: none;
+}
+.accordion .subPart button {
+  width: 100%;
+  display: inline-block;
+  text-align: inherit;
+  padding: 5px 0px 5px 10px;
+  background-color: #DFF0E2;
+}
+.accordion .text {
+  padding: 0 18px;
+  background-color: white;
+  /* display: none; */
+  overflow: hidden;
+}
+.accordion .subPart .Subtext {
+  display: none;
+}
+.active .fa {
+  transform:rotateX(180deg);
+}
